@@ -1,4 +1,4 @@
-package com.curso;
+package com.curso.v1;
 
 public class Animal {
 	

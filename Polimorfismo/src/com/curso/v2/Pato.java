@@ -1,4 +1,4 @@
-package com.curso;
+package com.curso.v2;
 
 public class Pato extends Animal {
 	
