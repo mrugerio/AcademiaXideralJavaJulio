@@ -6,10 +6,11 @@ public class Student {
 	private int age;
 	
 	public String getName() {
-		if (rol="admin")
-			return name;
-		else
-			return null;
+//		if (rol="admin")
+//			return name;
+//		else
+//			return null;
+		return name;
 	}
 
 	public void setName(String name) {
