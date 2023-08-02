@@ -4,6 +4,7 @@ public class Principal {
 
 	public static void main(String[] args) {
 		
+		//DEFINE LA LAMBDA (NO SE EJECUTA)
 		PredicadoEmpleado peMayorEdad = emp -> emp.getEdad()>18;
 		PredicadoEmpleado peEsRico = emp -> emp.getSueldo()>500;
 		
@@ -18,6 +19,7 @@ public class Principal {
 		
 		for (Empleado emp : arrayEmpleados) {
 			System.out.println(emp);
+			//EJECUCION DE LA LAMBDA
 			System.out.println("Es mayor edad: " + peMayorEdad.probar(emp));
 			System.out.println("Es rico: " + peEsRico.probar(emp));
 		}
