@@ -1,3 +1,4 @@
+package com.curso.v0;
 import java.util.function.ToDoubleBiFunction;
 
 public class Principal {
