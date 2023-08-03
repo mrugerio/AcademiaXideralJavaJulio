@@ -41,5 +41,14 @@ public class Employee {
 		return "Employee [id=" + id + ", nombre=" + nombre + ", salary=" + salary + "]";
 	}
 	
+	static Employee addSalary(Employee e,double inc) {
+		e.setSalary(e.getSalary()*inc);
+		return e;
+	}
+	
+	Employee incrementarSalario(double inc) {
+		this.setSalary(this.getSalary()*inc);
+		return this;
+	}
 
 }
