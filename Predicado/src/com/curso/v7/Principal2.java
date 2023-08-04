@@ -22,7 +22,11 @@ public class Principal2 {
 			System.out.println("Es impar");
 		
 		System.out.println("**********");
-		
+		//Vamos a evaluar una lambda Function donde vamos a pasar 
+		//un valor entero y regresar un String, 
+		//la lambda va a evaluar si es un un número par (regresa: "Es par")
+		//o impar (regresa: "Es Impar")
+				
 		Function<Integer,String> fun = i -> (i%2==0) ? "Es par" : "Es impar" ;
 		
 		System.out.println(fun.apply(8));
