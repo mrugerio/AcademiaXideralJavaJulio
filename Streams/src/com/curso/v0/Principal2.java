@@ -25,12 +25,13 @@ public class Principal2 {
 		//4.Ordernar por nombre
 		//5.Obtener una lista de los nombres: List<String> nombres
 		
-		List<String> listaNombres = listEmpleados.stream()
+		List<String> listaNombres = listEmpleados.stream() //CREA
 				.filter(e->e.getSalary()<400)
 				.peek(y->y.setSalary(y.getSalary()+200))
 				.filter(z -> z.getNombre().length()>6)
 				.sorted(Comparator.comparing(Employee::getNombre))
-				.map(e -> e.getNombre()).collect(Collectors.toList());
+				.map(e -> e.getNombre())
+				.collect(Collectors.toList()); //TERMINA
 			
 		listaNombres.forEach(x -> System.out.println(x));
 		
