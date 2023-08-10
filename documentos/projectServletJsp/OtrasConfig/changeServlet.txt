@@ -1,0 +1,16 @@
+@Override
+	public void init() throws ServletException {
+		super.init();
+		
+		try {
+			//https://www.digitalocean.com/community/tutorials/tomcat-datasource-jndi-example-java
+			Context ctx = new InitialContext(); //USO DE JNDI
+			dataSource = (DataSource) ctx.lookup("java:/comp/env/jdbc/javatechie"); //USO DE JNDI
+			System.out.println("Demo con JNDI, Datasource: "+dataSource);
+
+			studentDbUtil = new StudentDbUtil(dataSource);			
+		}
+		catch (Exception exc) {
+			throw new ServletException(exc);
+		}
+	}
