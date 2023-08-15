@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.luv2code.springboot</groupId>
-	<artifactId>cruddemo</artifactId>
+	<artifactId>crudsecurity02</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>cruddemo</name>
+	<name>crudsecurity02</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
